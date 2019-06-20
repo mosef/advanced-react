@@ -34,7 +34,7 @@ const App = () => {
               toggle(!currentTheme);
               dispatch({
                 type: actions.SAVE_USERDATA,
-                data: theme
+                data: currentTheme ? light : dark
               });
             }}
           />
