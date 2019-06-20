@@ -1,0 +1,26 @@
+// Colors:
+$dark-bg: #313131;
+$primary-red: #ec625f;
+$white-text: #ffffff;
+$card-bg: #53354a;
+
+// Fonts:
+$sans: 'Lato', sans-serif;
+$light: 300;
+$normal: 400;
+$semibold: 500;
+$bold: 700;
+
+body {
+  font-family: $sans;
+  font-weight: $light;
+  color: $white-text; //color variable set elsewhere
+  background-color: $dark-bg;
+  -webkit-text-size-adjust: 100%; //fix for iOS
+  button {
+    cursor: pointer;
+  }
+  li {
+    list-style: none;
+  }
+}
