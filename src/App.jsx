@@ -23,14 +23,15 @@ const App = () => {
           <button onClick={() => toggle(!currentTheme)} />
         </ul>
       </nav>
-      <MoviesList
+      {/* <MoviesList
         theme={{
           currentTheme,
           toggle,
           dark,
           light
         }}
-      />
+      /> */}
+      <MoviesList selectedTheme={useContext(ThemeContext)} />
     </div>
   );
 };

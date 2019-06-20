@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import getMovies from './getMovies';
 
-const MoviesList = props => {
+const MoviesList = ({ selectedTheme }) => {
   const Movies = getMovies();
   const [isVisible, setVisibility] = useState(false);
-  const { currentTheme, dark, light } = props.theme;
+  const { currentTheme, dark, light } = selectedTheme;
   const theme = currentTheme ? dark : light;
 
   return (
