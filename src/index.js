@@ -4,11 +4,14 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 import { ThemeContextProvider } from './Themes/ThemeProvider';
+import { UserReducerProvider } from './Store/reducers';
 
 ReactDOM.render(
-  <ThemeContextProvider>
-    <App />
-  </ThemeContextProvider>,
+  <UserReducerProvider>
+    <ThemeContextProvider>
+      <App />
+    </ThemeContextProvider>
+  </UserReducerProvider>,
   document.getElementById('root')
 );
 
