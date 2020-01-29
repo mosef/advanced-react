@@ -1,0 +1,5 @@
+// User Actions
+
+export const SAVE_USERDATA = 'SAVING_USER_THEME';
+export const LOAD_USERDATA = 'LOADING_USER_THEME';
+export const DELETE_USERDATA = 'DELETING_USER_THEME';
